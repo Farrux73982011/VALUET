@@ -1,5 +1,5 @@
 import { user } from "./user_data"
-let header_con = document.querySelector('.header_con')
+let left_con = document.querySelector('.left_con')
 
 let logo_div = document.createElement('div')
 let logo_h1 = document.createElement('h1')
@@ -76,7 +76,7 @@ surname.innerHTML = user.surname
 log_img.src = '/public/icon/Groupp.png'
 log_h1.innerHTML = 'Log Out'
 
-header_con.append(logo_div, div_btn, div_down)
+left_con.append(logo_div, div_btn, div_down)
 logo_div.append(logo_h1, logo_line)
 div_btn.append(btn1, btn2, btn3, btn4, btn5)
 btn1.append(img_btn1, h1_btn1)
@@ -93,3 +93,38 @@ btn2.classList.add('btns')
 btn3.classList.add('btns')
 btn4.classList.add('btns')
 btn5.classList.add('btns')
+
+
+
+
+
+////////////////////////////
+
+
+
+
+
+let header_con = document.querySelector('.header_con')
+
+let search = document.createElement('input')
+let search_div = document.createElement('div')
+let search_img = document.createElement('img')
+let right = document.createElement('div')
+let email = document.createElement('img')
+let call = document.createElement('img')
+
+header_con.classList.add('header_con')
+search.classList.add('search')
+search_div.classList.add('search_div')
+right.classList.add('right')
+email.classList.add('email')
+call.classList.add('call')
+search_img.classList.add('search_img')
+
+search_img.src = '/public/icon/GGroup.png'
+email.src = '/public/icon/Grouppp.png'
+call.src = '/public/icon/Vector (2).png'
+
+header_con.append(search_div, right)
+search_div.append(search, search_img)
+right.append(email, call)
