@@ -3,6 +3,7 @@
     padding: 0;
 }
 body{
+    display: flex;
     background: radial-gradient(87.34% 56.16% at 46.63% 48.05%, #20135C 0%, #140739 92.82%);
 }
 .left_con{
@@ -148,11 +149,11 @@ body{
 .midle{
     display: flex;
 }
-.flex{
-    display: flex;
-    z-index: 0;
-    margin-top: -110px;
-}
+// .flex{
+//     display: flex;
+//     z-index: 0;
+//     margin-top: -110px;
+// }
 .right_mid_g{
     width: 583.978px;
     display: flex;
@@ -223,8 +224,8 @@ background: linear-gradient(180deg, rgba(27, 18, 78, 0.20) 0%, #0F0B38 93.37%);
     width: fit-content;
     height: fit-content;
     border-bottom: 1px solid #2D317A;
-    margin-left: 32px;
     display: flex;
+    margin-left: 32px;
 }
 .search_div{
     float: left;
@@ -262,8 +263,31 @@ background: linear-gradient(180deg, rgba(27, 18, 78, 0.20) 0%, #0F0B38 93.37%);
     height: 28px;
 }
 .container{
-    z-index: 4;
-    margin-top: 110px;
-    margin-left: 253px;
+    margin-top: 28px;
+    margin-left: 32px;
     width: fit-content;
+    .div_up{
+        display: flex;
+        height: 20px;
+    }
+}
+.over{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.add_w{
+    width: 125px;
+    height: 32px;
+    border-radius: 25px;
+    background: linear-gradient(272deg, #3887FE 4.26%, #3BA0FF 51.37%, #5FB2FF 99.01%);
+    box-shadow: 0px 2px 4px 0px rgba(85, 35, 221, 0.40);
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 1120px;
 }
