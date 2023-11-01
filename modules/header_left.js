@@ -94,8 +94,20 @@ btn3.classList.add('btns')
 btn4.classList.add('btns')
 btn5.classList.add('btns')
 
-
-
+btn3.onclick = () => {
+    if(btn1.classList.contains('active')){
+        btn1.classList.remove('active')
+        btn3.classList.add('active')
+    }
+    location.assign('/pages/transactions/')
+}
+btn1.onclick = () => {
+    if(btn3.classList.contains('active')){
+        btn1.classList.add('active')
+        btn3.classList.remove('active') 
+    }
+    location.assign('/')
+}
 
 
 ////////////////////////////
@@ -108,6 +120,7 @@ let header_con = document.querySelector('.header_con')
 
 let search = document.createElement('input')
 let search_div = document.createElement('div')
+let ser_dv = document.createElement('div')
 let search_img = document.createElement('img')
 let right = document.createElement('div')
 let email = document.createElement('img')
@@ -115,6 +128,7 @@ let call = document.createElement('img')
 
 header_con.classList.add('header_con')
 search.classList.add('search')
+ser_dv.classList.add('ser_dv')
 search_div.classList.add('search_div')
 right.classList.add('right')
 email.classList.add('email')
@@ -126,5 +140,6 @@ email.src = '/public/icon/Grouppp.png'
 call.src = '/public/icon/Vector (2).png'
 
 header_con.append(search_div, right)
-search_div.append(search, search_img)
+search_div.append(search, ser_dv)
+ser_dv.append(search_img)
 right.append(email, call)
